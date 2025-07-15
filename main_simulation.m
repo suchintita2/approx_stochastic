@@ -40,7 +40,13 @@ ylabel('RMSE');
 title('Adder Accuracy Comparison');
 grid on;
 
-%% Plot: PSA Area vs. Accuracy Trade-off
+%% Plot: Area vs. Accuracy Trade-off
+plot_tradeoffs(G_values, rmse_mux, M);
+
+plot_tradeoffs(G_values, rmse_cemux, M);
+
+plot_tradeoffs(G_values, rmse_apc, M);
+
 plot_tradeoffs(G_values, rmse_psa, M);
 
 %% End of script
